@@ -1,0 +1,160 @@
+{
+  "users": [
+    {
+      "id": 1759682038093,
+      "name": "Mohit",
+      "email": "2@gmail.com",
+      "role": "admin",
+      "password": "$2b$08$8GfLNW6jhSmDKk9LdrPO/Oxf1dUW9tnlFZp5t4gtd4xABTVgegL5G"
+    },
+    {
+      "id": 1759774374945,
+      "name": "Kushagra",
+      "email": "3@gmail.com",
+      "role": "user",
+      "password": "$2b$08$PTI1vAzPTlxGKBuU676hZ.foY.uJv/Xi9LOG1ZJaX5yCYGXpaZz72"
+    },
+    {
+      "id": 1759774776000,
+      "name": "Shourya",
+      "email": "4@gmail.com",
+      "role": "user",
+      "password": "$2b$08$C7OkBEoLLsl7BNwh1R8Ml.YXYhEgjqt2GC9DAGJzqJZ89NOKwjy/q"
+    },
+    {
+      "id": 1759604097905,
+      "name": "Prakhar",
+      "email": "1@gmail.com",
+      "role": "user",
+      "password": "$2b$08$Trap/XIYgkIbmkGZUxcXluPnYUjt5GvHJy9lQC2ipzU.tZAoCj.TO"
+    }
+  ],
+  "tasks": [
+    {
+      "id": "1",
+      "details": "Design login page",
+      "project": "Website Redesign",
+      "priority": "Medium",
+      "dueDate": "2025-10-01",
+      "status": "progress",
+      "userId": "1759604097905"
+    },
+    {
+      "id": "2",
+      "details": "Set up database schema",
+      "project": "Backend API",
+      "priority": "Medium",
+      "dueDate": "2025-10-05",
+      "status": "progress",
+      "userId": "1759682038093"
+    },
+    {
+      "id": "3",
+      "details": "Write unit tests",
+      "project": "Backend API",
+      "priority": "High",
+      "dueDate": "2025-10-01",
+      "status": "progress",
+      "userId": "1759604097905"
+    },
+    {
+      "id": "4",
+      "details": "Prepare project report",
+      "project": "Management",
+      "priority": "High",
+      "dueDate": "2025-10-10T00:00:00.000Z",
+      "status": "delete",
+      "userId": "1759682038093"
+    },
+    {
+      "id": "1759673816534",
+      "details": "Making Project",
+      "project": "Doing Angular",
+      "priority": "High",
+      "dueDate": "2025-10-06T00:00:00.000Z",
+      "status": "todo",
+      "userId": "1759604097905"
+    },
+    {
+      "id": "1759673931885",
+      "details": "Working on Something",
+      "project": "Advance Java assign",
+      "priority": "Medium",
+      "dueDate": "2025-09-30T00:00:00.000Z",
+      "status": "progress",
+      "userId": "1759604097905"
+    },
+    {
+      "id": "1759690596921",
+      "details": "Working on Something",
+      "project": "Project A",
+      "priority": "Low",
+      "dueDate": "2025-10-15T00:00:00.000Z",
+      "status": "todo",
+      "userId": "1759604097905"
+    },
+    {
+      "id": "1759691627027",
+      "details": "Making Project",
+      "project": "Project B",
+      "priority": "Low",
+      "dueDate": "2025-10-29",
+      "status": "todo",
+      "userId": "1759682038093"
+    },
+    {
+      "id": "1759729486241",
+      "details": "ithethuei",
+      "project": "3232323",
+      "priority": "Low",
+      "dueDate": "2025-10-08T00:00:00.000Z",
+      "status": "delete",
+      "userId": "1759604097905"
+    },
+    {
+      "id": "1759772497847",
+      "details": "Working on Something",
+      "project": "Advance Java assignment",
+      "priority": "Low",
+      "dueDate": "2025-10-31T00:00:00.000Z",
+      "status": "completed",
+      "userId": "1759604097905"
+    },
+    {
+      "id": "1759773902212",
+      "details": "Working on Something",
+      "project": "Advance Java assign",
+      "priority": "Low",
+      "dueDate": "2025-10-22T00:00:00.000Z",
+      "status": "delete",
+      "userId": "1759604097905"
+    },
+    {
+      "id": "1759774409029",
+      "details": "Making Project",
+      "project": "Advance Java assign",
+      "priority": "High",
+      "dueDate": "2025-10-10T00:00:00.000Z",
+      "status": "todo",
+      "userId": "1759774374945"
+    },
+    {
+      "id": "1759816210035",
+      "details": "Working on Something",
+      "project": "Angular Assignment",
+      "priority": "High",
+      "dueDate": "2025-10-15T00:00:00.000Z",
+      "status": "todo",
+      "userId": "1759604097905"
+    },
+    {
+      "id": "1759828686533",
+      "details": "Making Project",
+      "project": "Working on Angular",
+      "priority": "High",
+      "dueDate": "2025-10-10T00:00:00.000Z",
+      "status": "todo",
+      "userId": "1759604097905"
+    }
+  ]
+}
