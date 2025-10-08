@@ -70,7 +70,7 @@
       "id": "1759673816534",
       "details": "Making Project",
       "project": "Doing Angular",
-      "priority": "High",
+      "priority": "Medium",
       "dueDate": "2025-10-06T00:00:00.000Z",
       "status": "todo",
       "userId": "1759604097905"
@@ -153,6 +153,15 @@
       "project": "Working on Angular",
       "priority": "High",
       "dueDate": "2025-10-10T00:00:00.000Z",
+      "status": "todo",
+      "userId": "1759604097905"
+    },
+    {
+      "id": "1759859280907",
+      "details": "Making Project",
+      "project": "Project A",
+      "priority": "High",
+      "dueDate": "2025-10-07T00:00:00.000Z",
       "status": "todo",
       "userId": "1759604097905"
     }

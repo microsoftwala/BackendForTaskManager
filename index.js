@@ -14,7 +14,7 @@ const app = express();
 const PORT = process.env.PORT || 3000;
 
 const corsOptions = {
-  origin: "http://localhost:4200",
+  origin: ["http://localhost:4200","https://frontend-for-task-manager-hwj3.vercel.app"],
   optionsSuccessStatus: 204,
   methods: "GET, POST, PUT, DELETE",
 };
