@@ -36,7 +36,7 @@
       "project": "Website Redesign",
       "priority": "Medium",
       "dueDate": "2025-10-01",
-      "status": "progress",
+      "status": "todo",
       "userId": "1759604097905"
     },
     {
@@ -54,7 +54,7 @@
       "project": "Backend API",
       "priority": "High",
       "dueDate": "2025-10-01",
-      "status": "progress",
+      "status": "todo",
       "userId": "1759604097905"
     },
     {
@@ -90,7 +90,7 @@
       "project": "Project A",
       "priority": "Low",
       "dueDate": "2025-10-15T00:00:00.000Z",
-      "status": "todo",
+      "status": "progress",
       "userId": "1759604097905"
     },
     {
@@ -164,6 +164,43 @@
       "dueDate": "2025-10-07T00:00:00.000Z",
       "status": "todo",
       "userId": "1759604097905"
+    }
+  ],
+  "activities": [
+    {
+      "id": 1759922551469,
+      "userId": "1759604097905",
+      "entityId": "1",
+      "details": "Task \"Design login page\" moved to todo",
+      "timestamp": "2025-10-08T11:22:31.470Z"
+    },
+    {
+      "id": 1759922582751,
+      "userId": "1759604097905",
+      "entityId": "1759673931885",
+      "details": "Task \"Working on Something\" moved to progress",
+      "timestamp": "2025-10-08T11:23:02.751Z"
+    },
+    {
+      "id": 1759922869719,
+      "userId": "1759604097905",
+      "entityId": "3",
+      "details": "Task \"Write unit tests\" moved to todo",
+      "timestamp": "2025-10-08T11:27:49.719Z"
+    },
+    {
+      "id": 1759922986100,
+      "userId": "1759604097905",
+      "entityId": "1759673931885",
+      "details": "Task \"Working on Something\" moved to todo",
+      "timestamp": "2025-10-08T11:29:46.100Z"
+    },
+    {
+      "id": 1759922991863,
+      "userId": "1759604097905",
+      "entityId": "1759673931885",
+      "details": "Task \"Working on Something\" moved to progress",
+      "timestamp": "2025-10-08T11:29:51.863Z"
     }
   ]
 }
