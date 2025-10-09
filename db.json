@@ -142,8 +142,8 @@
       "id": "1759816210035",
       "details": "Working on Something",
       "project": "Angular Assignment",
-      "priority": "High",
-      "dueDate": "2025-10-15T00:00:00.000Z",
+      "priority": "Medium",
+      "dueDate": "2025-10-12",
       "status": "todo",
       "userId": "1759604097905"
     },
@@ -153,7 +153,7 @@
       "project": "Working on Angular",
       "priority": "High",
       "dueDate": "2025-10-10T00:00:00.000Z",
-      "status": "todo",
+      "status": "progress",
       "userId": "1759604097905"
     },
     {
@@ -162,6 +162,15 @@
       "project": "Project A",
       "priority": "High",
       "dueDate": "2025-10-07T00:00:00.000Z",
+      "status": "todo",
+      "userId": "1759604097905"
+    },
+    {
+      "id": "1759987695633",
+      "details": "Java Assignment",
+      "project": "Complete Java advance assign",
+      "priority": "Medium",
+      "dueDate": "2025-10-09T00:00:00.000Z",
       "status": "todo",
       "userId": "1759604097905"
     }
@@ -215,6 +224,13 @@
       "entityId": "1759673931885",
       "details": "Task \"Working on Something\" moved to todo",
       "timestamp": "2025-10-09T04:44:32.197Z"
+    },
+    {
+      "id": 1759987644270,
+      "userId": "1759604097905",
+      "entityId": "1759828686533",
+      "details": "Task \"Making Project\" moved to progress",
+      "timestamp": "2025-10-09T05:27:24.270Z"
     }
   ]
 }

@@ -1,6 +1,7 @@
 const express = require("express");
 const fs = require("fs");
 const bcrypt = require("bcryptjs");
+// const { authorizeRole } = require("../middleware/authMiddleware");
 
 const router = express.Router();
 const DB_FILE = "./db.json";
@@ -13,8 +14,19 @@ function writeDB(data) {
   fs.writeFileSync(DB_FILE, JSON.stringify(data, null, 2));
 }
 
+function authorizeRole(role) {
+  return (req, res, next) => {
+    if (req.user.role !== role) {
+      return res
+        .status(403)
+        .json({ message: "Forbidden: insufficient rights" });
+    }
+    next();
+  };
+}
+
 // Get all users
-router.get("/", (req, res) => {
+router.get("/", authorizeRole("admin"), (req, res) => {
   try {
     const db = readDB();
     const usersWithoutPasswords = (db.users || []).map(
@@ -54,7 +66,7 @@ router.put("/", (req, res) => {
 });
 
 // Delete user
-router.delete("/:id", (req, res) => {
+router.delete("/:id",authorizeRole('admin'), (req, res) => {
   try {
     const { id } = req.params;
     const Id = Number(id);

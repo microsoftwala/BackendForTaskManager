@@ -12,8 +12,19 @@ function writeDB(data) {
   fs.writeFileSync(DB_FILE, JSON.stringify(data, null, 2));
 }
 
+function authorizeRole(role) {
+  return (req, res, next) => {
+    if (req.user.role !== role) {
+      return res
+        .status(403)
+        .json({ message: "Forbidden: insufficient rights" });
+    }
+    next();
+  };
+}
+
 // Create task
-router.post("/", (req, res) => {
+router.post("/", authorizeRole("user"), (req, res) => {
   const { details, project, priority, dueDate, status, userId } = req.body;
   const db = readDB();
 
@@ -36,7 +47,7 @@ router.post("/", (req, res) => {
 });
 
 // Update task
-router.put("/:id", (req, res) => {
+router.put("/:id", authorizeRole("user"), (req, res) => {
   const { id } = req.params;
   const { details, project, priority, dueDate, status } = req.body;
 
