@@ -1,6 +1,13 @@
 {
   "users": [
     {
+      "id": 1759604097905,
+      "name": "Prakhar",
+      "email": "1@gmail.com",
+      "role": "user",
+      "password": "$2b$08$Trap/XIYgkIbmkGZUxcXluPnYUjt5GvHJy9lQC2ipzU.tZAoCj.TO"
+    },
+    {
       "id": 1759682038093,
       "name": "Mohit",
       "email": "2@gmail.com",
@@ -20,13 +27,6 @@
       "email": "4@gmail.com",
       "role": "user",
       "password": "$2b$08$C7OkBEoLLsl7BNwh1R8Ml.YXYhEgjqt2GC9DAGJzqJZ89NOKwjy/q"
-    },
-    {
-      "id": 1759604097905,
-      "name": "Prakhar",
-      "email": "1@gmail.com",
-      "role": "user",
-      "password": "$2b$08$Trap/XIYgkIbmkGZUxcXluPnYUjt5GvHJy9lQC2ipzU.tZAoCj.TO"
     }
   ],
   "tasks": [
@@ -81,7 +81,7 @@
       "project": "Advance Java assign",
       "priority": "Medium",
       "dueDate": "2025-09-30T00:00:00.000Z",
-      "status": "progress",
+      "status": "todo",
       "userId": "1759604097905"
     },
     {
@@ -201,6 +201,20 @@
       "entityId": "1759673931885",
       "details": "Task \"Working on Something\" moved to progress",
       "timestamp": "2025-10-08T11:29:51.863Z"
+    },
+    {
+      "id": 1759985053152,
+      "userId": "1759604097905",
+      "entityId": "1759673931885",
+      "details": "Task \"Working on Something\" moved to progress",
+      "timestamp": "2025-10-09T04:44:13.152Z"
+    },
+    {
+      "id": 1759985072197,
+      "userId": "1759604097905",
+      "entityId": "1759673931885",
+      "details": "Task \"Working on Something\" moved to todo",
+      "timestamp": "2025-10-09T04:44:32.197Z"
     }
   ]
 }
