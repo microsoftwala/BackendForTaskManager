@@ -75,4 +75,38 @@ app.post("/activity", (req, res) => {
   }
 });
 
+
+
+app.get("/activity", (req, res) => {
+  try {
+    const db = readDB();
+
+    // Ensure activities array exists
+    const activities = db.activities || [];
+
+    // Optional: filter by userId if query param is provided
+    const { userId, limit } = req.query;
+    let result = activities;
+
+    if (userId) {
+      result = result.filter((a) => a.userId === userId);
+    }
+
+    // Sort by timestamp (newest first)
+    result = result.sort(
+      (a, b) =>
+        new Date(b.timestamp).getTime() - new Date(a.timestamp).getTime()
+    );
+
+    // Limit results (default 10)
+    const max = limit ? parseInt(limit) : 10;
+    result = result.slice(0, max);
+
+    res.json(result);
+  } catch (err) {
+    console.error("Error reading activities:", err);
+  }
+});
+
+
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));

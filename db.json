@@ -81,15 +81,6 @@
       "project": "Advance Java assign",
       "priority": "Medium",
       "dueDate": "2025-09-30T00:00:00.000Z",
-      "status": "todo",
-      "userId": "1759604097905"
-    },
-    {
-      "id": "1759690596921",
-      "details": "Working on Something",
-      "project": "Project A",
-      "priority": "Low",
-      "dueDate": "2025-10-15T00:00:00.000Z",
       "status": "progress",
       "userId": "1759604097905"
     },
@@ -103,33 +94,6 @@
       "userId": "1759682038093"
     },
     {
-      "id": "1759729486241",
-      "details": "ithethuei",
-      "project": "3232323",
-      "priority": "Low",
-      "dueDate": "2025-10-08T00:00:00.000Z",
-      "status": "delete",
-      "userId": "1759604097905"
-    },
-    {
-      "id": "1759772497847",
-      "details": "Working on Something",
-      "project": "Advance Java assignment",
-      "priority": "Low",
-      "dueDate": "2025-10-31T00:00:00.000Z",
-      "status": "completed",
-      "userId": "1759604097905"
-    },
-    {
-      "id": "1759773902212",
-      "details": "Working on Something",
-      "project": "Advance Java assign",
-      "priority": "Low",
-      "dueDate": "2025-10-22T00:00:00.000Z",
-      "status": "delete",
-      "userId": "1759604097905"
-    },
-    {
       "id": "1759774409029",
       "details": "Making Project",
       "project": "Advance Java assign",
@@ -137,15 +101,6 @@
       "dueDate": "2025-10-10T00:00:00.000Z",
       "status": "todo",
       "userId": "1759774374945"
-    },
-    {
-      "id": "1759816210035",
-      "details": "Working on Something",
-      "project": "Angular Assignment",
-      "priority": "Medium",
-      "dueDate": "2025-10-12",
-      "status": "todo",
-      "userId": "1759604097905"
     },
     {
       "id": "1759828686533",
@@ -171,7 +126,7 @@
       "project": "Complete Java advance assign",
       "priority": "Medium",
       "dueDate": "2025-10-09T00:00:00.000Z",
-      "status": "todo",
+      "status": "completed",
       "userId": "1759604097905"
     },
     {
@@ -180,7 +135,7 @@
       "project": "Advance Java assign",
       "priority": "High",
       "dueDate": "2025-10-15T00:00:00.000Z",
-      "status": "progress",
+      "status": "completed",
       "userId": "1759774374945"
     },
     {
@@ -189,136 +144,101 @@
       "project": "Project C",
       "priority": "Low",
       "dueDate": "2026-02-22T00:00:00.000Z",
-      "status": "todo",
+      "status": "progress",
       "userId": "1759774374945"
     }
   ],
   "activities": [
     {
-      "id": 1759922551469,
-      "userId": "1759604097905",
-      "entityId": "1",
-      "details": "Task \"Design login page\" moved to todo",
-      "timestamp": "2025-10-08T11:22:31.470Z"
+      "id": 1760071637397,
+      "userId": "1759774374945",
+      "entityId": "1759774409029",
+      "details": "User \"Kushagra\" performed Task \"Making Project\" moved to todo",
+      "timestamp": "2025-10-10T04:47:17.397Z"
     },
     {
-      "id": 1759985072197,
-      "userId": "1759604097905",
-      "entityId": "1759673931885",
-      "details": "Task \"Working on Something\" moved to todo",
-      "timestamp": "2025-10-09T04:44:32.197Z"
+      "id": 1760071648563,
+      "userId": "1759774374945",
+      "entityId": "1759993453443",
+      "details": "User \"Kushagra\" performed Task \"Working on Something\" moved to completed",
+      "timestamp": "2025-10-10T04:47:28.563Z"
     },
     {
-      "id": 1759987644270,
+      "id": 1760072185155,
+      "userId": 1759604097905,
+      "entityId": "Null",
+      "details": "User Prakhar loggedIn",
+      "timestamp": "2025-10-10T04:56:25.155Z"
+    },
+    {
+      "id": 1760072536602,
+      "userId": "1759604097905",
+      "entityId": "1759987695633",
+      "details": "User \"Prakhar\" performed Task \"Java Assignment\" moved to todo",
+      "timestamp": "2025-10-10T05:02:16.602Z"
+    },
+    {
+      "id": 1760072667726,
+      "userId": "1759604097905",
+      "entityId": "1759773902212",
+      "details": "User \"Prakhar\" deleted Task \"Working Assignment\"",
+      "timestamp": "2025-10-10T05:04:27.726Z"
+    },
+    {
+      "id": 1760072797506,
+      "userId": "1759604097905",
+      "entityId": "1759816210035",
+      "details": "User \"Prakhar\" performed Task \"Working on Something\" moved to delete",
+      "timestamp": "2025-10-10T05:06:37.506Z"
+    },
+    {
+      "id": 1760072946658,
+      "userId": "1759604097905",
+      "entityId": "1759772497847",
+      "details": "User \"Prakhar\" performed Task \"Working on Something\" moved to delete",
+      "timestamp": "2025-10-10T05:09:06.658Z"
+    },
+    {
+      "id": 1760073597156,
+      "userId": "1759604097905",
+      "entityId": "1759772497847",
+      "details": "User \"Prakhar\" deleted Task \"[object Object]\"",
+      "timestamp": "2025-10-10T05:19:57.156Z"
+    },
+    {
+      "id": 1760073637340,
       "userId": "1759604097905",
       "entityId": "1759828686533",
-      "details": "Task \"Making Project\" moved to progress",
-      "timestamp": "2025-10-09T05:27:24.270Z"
+      "details": "User \"Prakhar\" performed Task \"Making Project\" moved to progress",
+      "timestamp": "2025-10-10T05:20:37.340Z"
     },
     {
-      "id": 1759992472956,
+      "id": 1760073645134,
       "userId": "1759604097905",
-      "entityId": "1759673931885",
-      "details": "Task \"Working on Something\" moved to progress",
-      "timestamp": "2025-10-09T06:47:52.956Z"
+      "entityId": "1759690596921",
+      "details": "User \"Prakhar\" performed Task \"Working on Something\" moved to delete",
+      "timestamp": "2025-10-10T05:20:45.134Z"
     },
     {
-      "id": 1759992481478,
+      "id": 1760074300642,
       "userId": "1759604097905",
-      "entityId": "1759673931885",
-      "details": "Task \"Working on Something\" moved to todo",
-      "timestamp": "2025-10-09T06:48:01.478Z"
+      "entityId": "1759690596921",
+      "details": "User \"Prakhar\" deleted Task \"Working on Something\"",
+      "timestamp": "2025-10-10T05:31:40.642Z"
     },
     {
-      "id": 1759993500656,
-      "userId": "1759774374945",
-      "entityId": "1759993453443",
-      "details": "Task \"Working on Something\" moved to progress",
-      "timestamp": "2025-10-09T07:05:00.656Z"
-    },
-    {
-      "id": 1759993513111,
-      "userId": "1759774374945",
-      "entityId": "1759993453443",
-      "details": "Task \"Working on Something\" moved to todo",
-      "timestamp": "2025-10-09T07:05:13.111Z"
-    },
-    {
-      "id": 1759993537554,
-      "userId": "1759774374945",
-      "entityId": "1759993453443",
-      "details": "Task \"Working on Something\" moved to progress",
-      "timestamp": "2025-10-09T07:05:37.554Z"
-    },
-    {
-      "id": 1759993800344,
-      "userId": "1759774374945",
-      "entityId": "1759993453443",
-      "details": "Task \"Working on Something\" moved to todo",
-      "timestamp": "2025-10-09T07:10:00.344Z"
-    },
-    {
-      "id": 1759993978316,
-      "userId": "1759774374945",
-      "entityId": "1759774409029",
-      "details": "Task \"Making Project\" moved to progress",
-      "timestamp": "2025-10-09T07:12:58.316Z"
-    },
-    {
-      "id": 1759994001787,
-      "userId": "1759774374945",
-      "entityId": "1759774409029",
-      "details": "Task \"Making Project\" moved to todo",
-      "timestamp": "2025-10-09T07:13:21.787Z"
-    },
-    {
-      "id": 1759998975898,
-      "userId": "1759774374945",
-      "entityId": "1759993453443",
-      "details": "Task \"Working on Something\" moved to progress",
-      "timestamp": "2025-10-09T08:36:15.898Z"
-    },
-    {
-      "id": 1760004795898,
-      "userId": 1759604097905,
-      "entityId": "Null",
-      "details": "User Prakhar loggedIn",
-      "timestamp": "2025-10-09T10:13:15.898Z"
-    },
-    {
-      "id": 1760004805622,
-      "userId": 1759682038093,
-      "entityId": "Null",
-      "details": "User Mohit loggedIn",
-      "timestamp": "2025-10-09T10:13:25.622Z"
-    },
-    {
-      "id": 1760004835036,
+      "id": 1760074432773,
       "userId": "1759604097905",
-      "entityId": "1759673931885",
-      "details": "Task \"Working on Something\" moved to progress",
-      "timestamp": "2025-10-09T10:13:55.036Z"
+      "entityId": "1759987695633",
+      "details": "User \"Prakhar\" performed Task \"Java Assignment\" moved to progress",
+      "timestamp": "2025-10-10T05:33:52.773Z"
     },
     {
-      "id": 1760004837151,
+      "id": 1760074438402,
       "userId": "1759604097905",
-      "entityId": "1759673931885",
-      "details": "Task \"Working on Something\" moved to todo",
-      "timestamp": "2025-10-09T10:13:57.151Z"
-    },
-    {
-      "id": 1760006456006,
-      "userId": "Null",
-      "entityId": "Null",
-      "details": "User Shourya SignedUp",
-      "timestamp": "2025-10-09T10:40:56.006Z"
-    },
-    {
-      "id": 1760006474252,
-      "userId": 1759604097905,
-      "entityId": "Null",
-      "details": "User Prakhar loggedIn",
-      "timestamp": "2025-10-09T10:41:14.252Z"
+      "entityId": "1759987695633",
+      "details": "User \"Prakhar\" performed Task \"Java Assignment\" moved to completed",
+      "timestamp": "2025-10-10T05:33:58.402Z"
     }
   ]
 }

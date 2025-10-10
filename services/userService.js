@@ -119,36 +119,36 @@ router.put("/updatePassword/:id", (req, res) => {
   }
 });
 
-router.post("/activity", (req, res) => {
-  try {
-    const { userId, action, entity, entityId, details } = req.body;
-    console.log("India", userId);
-    const db = readDB();
+// router.post("/activity", (req, res) => {
+//   try {
+//     const { userId, action, entity, entityId, details } = req.body;
+//     console.log("India", userId);
+//     const db = readDB();
 
-    if (!db.activities) {
-      db.activities = [];
-    }
+//     if (!db.activities) {
+//       db.activities = [];
+//     }
 
-    // Create new activity
-    const activity = {
-      id: Date.now(),
-      userId,
-      entityId, // e.g. task id
-      details, // e.g. "Task 'Finish report' created"
-      timestamp: new Date().toISOString(),
-    };
+//     // Create new activity
+//     const activity = {
+//       id: Date.now(),
+//       userId,
+//       entityId, // e.g. task id
+//       details, // e.g. "Task 'Finish report' created"
+//       timestamp: new Date().toISOString(),
+//     };
 
-    // Push into activities
-    db.activities.push(activity);
+//     // Push into activities
+//     db.activities.push(activity);
 
-    // Write back to file
-    writeDB(db);
+//     // Write back to file
+//     writeDB(db);
 
-    res.json({ message: "Activity logged", activity });
-  } catch (err) {
-    console.error("Error logging activity:", err);
-  }
-});
+//     res.json({ message: "Activity logged", activity });
+//   } catch (err) {
+//     console.error("Error logging activity:", err);
+//   }
+// });
 
 router.get("/activity", (req, res) => {
   try {
