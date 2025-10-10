@@ -10,7 +10,6 @@ const jwt = require("jsonwebtoken");
 const fs = require("fs");
 const authenticateToken = require("./middleware/authMiddleware");
 
-
 const app = express();
 const PORT = process.env.PORT || 3000;
 
@@ -24,13 +23,22 @@ function writeDB(data) {
   fs.writeFileSync(DB_FILE, JSON.stringify(data, null, 2));
 }
 
+// ✅ CORS setup
 const corsOptions = {
-  origin: ["http://localhost:4200","https://frontend-for-task-manager-hwj3.vercel.app"],
+  origin: [
+    "http://localhost:4200",
+    "https://frontend-for-task-manager-hwj3.vercel.app",
+  ],
+  methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
+  allowedHeaders: ["Content-Type", "Authorization"],
+  credentials: true,
   optionsSuccessStatus: 204,
-  methods: "GET, POST, PUT, DELETE",
 };
 
 app.use(cors(corsOptions));
+// Handle preflight requests for all routes
+app.options("*", cors(corsOptions));
+
 app.use(express.json());
 
 // Routes
@@ -43,7 +51,7 @@ app.get("/", (req, res) => {
   res.send("Backend is running!");
 });
 
-
+// Activity routes
 app.post("/activity", (req, res) => {
   try {
     const { userId, action, entity, entityId, details } = req.body;
@@ -58,33 +66,28 @@ app.post("/activity", (req, res) => {
     const activity = {
       id: Date.now(),
       userId,
-      entityId, // e.g. task id
-      details, // e.g. "Task 'Finish report' created"
+      action,
+      entity,
+      entityId,
+      details,
       timestamp: new Date().toISOString(),
     };
 
-    // Push into activities
     db.activities.push(activity);
-
-    // Write back to file
     writeDB(db);
 
     res.json({ message: "Activity logged", activity });
   } catch (err) {
     console.error("Error logging activity:", err);
+    res.status(500).json({ message: "Error logging activity" });
   }
 });
-
-
 
 app.get("/activity", (req, res) => {
   try {
     const db = readDB();
-
-    // Ensure activities array exists
     const activities = db.activities || [];
 
-    // Optional: filter by userId if query param is provided
     const { userId, limit } = req.query;
     let result = activities;
 
@@ -92,21 +95,19 @@ app.get("/activity", (req, res) => {
       result = result.filter((a) => a.userId === userId);
     }
 
-    // Sort by timestamp (newest first)
     result = result.sort(
       (a, b) =>
         new Date(b.timestamp).getTime() - new Date(a.timestamp).getTime()
     );
 
-    // Limit results (default 10)
     const max = limit ? parseInt(limit) : 10;
     result = result.slice(0, max);
 
     res.json(result);
   } catch (err) {
     console.error("Error reading activities:", err);
+    res.status(500).json({ message: "Error reading activities" });
   }
 });
-
 
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
